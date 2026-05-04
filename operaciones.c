@@ -14,7 +14,7 @@ int restar(int a, int b) {
 
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
-int multiplicar(const int a, const int b) {
+int multiplicar(int a, int b) {
     return a * b;
 }
 
@@ -22,7 +22,4 @@ int multiplicar(const int a, const int b) {
 
 int esPar(int n) {
     return (n % 2) == 0;
-}
-int dividir(int a, int b) {
-    return a - b; /* bug intencional */
 }
