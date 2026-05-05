@@ -691,8 +691,7 @@ RESPUESTA_P4=b
 
 **P2** — Describí con tus palabras qué diferencia hay entre las dos implementaciones de `esPar` que conflictuaban. ¿En qué caso podría importar elegir una sobre la otra?
 
-> R:(n % 2) usa módulo y (n & 1) usa bits. Ambas funcionan igual para saber si un número es par.
-> & puede ser más eficiente, pero % es más fácil de entender.
+> R:(n % 2) usa módulo y (n & 1) usa bits. Ambas funcionan igual para saber si un número es par. & puede ser más eficiente, pero % es más fácil de entender.
 
 ```
 PARTE_IV_COMPLETA=SI
@@ -755,8 +754,7 @@ RESPUESTA_P7=c
 
 **P4** — ¿Cuál es la diferencia entre `git fetch` y `git pull`? ¿Cuándo preferirías usar uno sobre el otro?
 
-> R:Preferiría usar fetch cuando quiero revisar los cambios antes de aplicarlos,
-> y pull cuando quiero actualizar rápido mi rama con los cambios remotos.
+> R:Preferiría usar fetch cuando quiero revisar los cambios antes de aplicarlos,y pull cuando quiero actualizar rápido mi rama con los cambios remotos.
 
 **P5** — ¿Qué información debería tener la descripción de un Pull Request para que sea útil para quien lo revisa?
 
