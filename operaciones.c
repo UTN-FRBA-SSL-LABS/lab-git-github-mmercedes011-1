@@ -15,14 +15,19 @@ int restar(int a, int b) {
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
 int multiplicar(int a, int b) {
+<<<<<<< HEAD
     return a * b;
     (void)a; (void)b;
     return 0; /* TODO: implementar */
 
+=======
+    (void)a; (void)b;
+    return 0; /* TODO: implementar */
+>>>>>>> origin/feature/conflicto-demo
 }
 
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(int n) {
-    return (n % 2) == 0; /* version main */
+    return (n % 2) == 0;
 }

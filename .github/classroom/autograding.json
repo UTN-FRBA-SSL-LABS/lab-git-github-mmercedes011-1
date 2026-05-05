@@ -6,7 +6,11 @@
       "run": "make clean && make",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 10, "points": 4
+=======
+      "timeout": 10, "points": 5
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 10, "points": 5
 >>>>>>> origin/feature/conflicto-demo
@@ -17,7 +21,11 @@
       "run": "! grep -q 'TODO' operaciones.c",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 5, "points": 4
+=======
+      "timeout": 5, "points": 5
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 5, "points": 5
 >>>>>>> origin/feature/conflicto-demo
@@ -28,7 +36,11 @@
       "run": "./calculadora | grep -q '3 \\* 5    = 15'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 5, "points": 8
+=======
+      "timeout": 5, "points": 10
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 5, "points": 10
 >>>>>>> origin/feature/conflicto-demo
@@ -39,7 +51,11 @@
       "run": "git log --all --format='%s' | grep -qF 'wip: experimento roto'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 5, "points": 8
+=======
+      "timeout": 5, "points": 10
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 5, "points": 10
 >>>>>>> origin/feature/conflicto-demo
@@ -50,7 +66,11 @@
       "run": "git log --all --format='%s' | grep -q '^Revert'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 5, "points": 8
+=======
+      "timeout": 5, "points": 10
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 5, "points": 10
 >>>>>>> origin/feature/conflicto-demo
@@ -61,7 +81,11 @@
       "run": "! grep -qE '^(<<<<<<<|=======|>>>>>>>)' operaciones.c",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 5, "points": 8
+=======
+      "timeout": 5, "points": 10
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 5, "points": 10
 >>>>>>> origin/feature/conflicto-demo
@@ -72,7 +96,11 @@
       "run": "./calculadora | grep -q '4 es par = 1' && ./calculadora | grep -q '7 es par = 0'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 5, "points": 8
+=======
+      "timeout": 5, "points": 10
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 5, "points": 10
 >>>>>>> origin/feature/conflicto-demo
@@ -83,7 +111,11 @@
       "run": "! git log --format='%s' | grep -qE '^.{0,4}$'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 5, "points": 4
+=======
+      "timeout": 5, "points": 5
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 5, "points": 5
 >>>>>>> origin/feature/conflicto-demo
@@ -94,7 +126,11 @@
       "run": "git branch -a | grep -q 'feature/mi-funcion' || gh pr list --state all --json headRefName --jq '.[].headRefName' | grep -q 'feature/mi-funcion'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 15, "points": 4
+=======
+      "timeout": 15, "points": 5
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 15, "points": 5
 >>>>>>> origin/feature/conflicto-demo
@@ -105,7 +141,11 @@
       "run": "gh pr list --state merged --base main --json headRefName --jq '.[].headRefName' | grep -q 'feature/mi-funcion'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 15, "points": 4
+=======
+      "timeout": 15, "points": 5
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 15, "points": 5
 >>>>>>> origin/feature/conflicto-demo
@@ -116,7 +156,11 @@
       "run": "git branch -a | grep -q 'sugerencia/' || gh pr list --state all --json headRefName --jq '.[].headRefName' | grep -q 'sugerencia/'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 15, "points": 4
+=======
+      "timeout": 15, "points": 5
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 15, "points": 5
 >>>>>>> origin/feature/conflicto-demo
@@ -127,7 +171,11 @@
       "run": "gh pr list --state merged --base main --json headRefName --jq '.[].headRefName' | grep -q 'sugerencia/'",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 15, "points": 4
+=======
+      "timeout": 15, "points": 5
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 15, "points": 5
 >>>>>>> origin/feature/conflicto-demo
@@ -138,7 +186,11 @@
       "run": "PR=$(gh pr list --state merged --base main --json number,headRefName --jq '.[] | select(.headRefName | startswith(\"sugerencia/\")) | .number' | head -1) && [ -n \"$PR\" ] && [ \"$(gh pr view \"$PR\" --json reviews --jq '.reviews | length')\" -gt 0 ]",
       "input": "", "output": "", "comparison": "included",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "timeout": 15, "points": 4
+=======
+      "timeout": 15, "points": 5
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 15, "points": 5
 >>>>>>> origin/feature/conflicto-demo
@@ -148,6 +200,7 @@
       "setup": "",
       "run": "PR=$(gh pr list --state merged --base main --json number,headRefName --jq '.[] | select(.headRefName | startswith(\"sugerencia/\")) | .number' | head -1) && [ -n \"$PR\" ] && [ \"$(gh pr view \"$PR\" --json reviews --jq '[.reviews[] | select(.state == \"APPROVED\")] | length')\" -gt 0 ]",
       "input": "", "output": "", "comparison": "included",
+<<<<<<< HEAD
 <<<<<<< HEAD
       "timeout": 15, "points": 7
     },
@@ -199,6 +252,9 @@
       "run": "grep -q 'RESPUESTA_P7=c' readme.md",
       "input": "", "output": "", "comparison": "included",
       "timeout": 5, "points": 3
+=======
+      "timeout": 15, "points": 10
+>>>>>>> origin/feature/conflicto-demo
 =======
       "timeout": 15, "points": 10
 >>>>>>> origin/feature/conflicto-demo

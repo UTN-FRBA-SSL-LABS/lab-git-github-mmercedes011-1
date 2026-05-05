@@ -4,9 +4,12 @@ on:
   push:
     branches: [ "**" ]
 <<<<<<< HEAD
+<<<<<<< HEAD
     paths:
       - "operaciones.c"
       - "readme.md"
+=======
+>>>>>>> origin/feature/conflicto-demo
 =======
 >>>>>>> origin/feature/conflicto-demo
 
@@ -138,6 +141,7 @@ jobs:
             --jq '[.reviews[] | select(.state == "APPROVED")] | length')" -gt 0 ]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       # ── C15–C21. Preguntas conceptuales ───────────────────────────
 
       - name: "C15. P1: concepto de branches"
@@ -177,6 +181,8 @@ jobs:
 
 =======
 >>>>>>> origin/feature/conflicto-demo
+=======
+>>>>>>> origin/feature/conflicto-demo
       # ── Puntaje final ──────────────────────────────────────────────
 
       - name: Calcular puntaje
@@ -197,6 +203,7 @@ jobs:
           O_C13: ${{ steps.c13.outcome }}
           O_C14: ${{ steps.c14.outcome }}
 <<<<<<< HEAD
+<<<<<<< HEAD
           O_C15: ${{ steps.c15.outcome }}
           O_C16: ${{ steps.c16.outcome }}
           O_C17: ${{ steps.c17.outcome }}
@@ -206,11 +213,14 @@ jobs:
           O_C21: ${{ steps.c21.outcome }}
 =======
 >>>>>>> origin/feature/conflicto-demo
+=======
+>>>>>>> origin/feature/conflicto-demo
         run: |
           pts() { [ "$1" = "success" ] && echo "$2" || echo 0; }
           row() { [ "$2" = "success" ] && echo "| $1 | ✅ | $3 / $3 |" || echo "| $1 | ❌ | 0 / $3 |"; }
 
           SCORE=0
+<<<<<<< HEAD
 <<<<<<< HEAD
           SCORE=$((SCORE + $(pts "$O_C1"   4)))
           SCORE=$((SCORE + $(pts "$O_C2"   4)))
@@ -234,6 +244,8 @@ jobs:
           SCORE=$((SCORE + $(pts "$O_C20"  3)))
           SCORE=$((SCORE + $(pts "$O_C21"  3)))
 =======
+=======
+>>>>>>> origin/feature/conflicto-demo
           SCORE=$((SCORE + $(pts "$O_C1"   5)))
           SCORE=$((SCORE + $(pts "$O_C2"   5)))
           SCORE=$((SCORE + $(pts "$O_C3"  10)))
@@ -248,11 +260,15 @@ jobs:
           SCORE=$((SCORE + $(pts "$O_C12"  5)))
           SCORE=$((SCORE + $(pts "$O_C13"  5)))
           SCORE=$((SCORE + $(pts "$O_C14" 10)))
+<<<<<<< HEAD
+>>>>>>> origin/feature/conflicto-demo
+=======
 >>>>>>> origin/feature/conflicto-demo
 
           {
             echo "## Puntaje: $SCORE / 100"
             echo ""
+<<<<<<< HEAD
 <<<<<<< HEAD
             echo "### Checks comportamentales"
             echo ""
@@ -285,6 +301,8 @@ jobs:
             row "C20. P6: fetch vs pull"                            "$O_C20"  3
             row "C21. P7: descripcion de PR"                        "$O_C21"  3
 =======
+=======
+>>>>>>> origin/feature/conflicto-demo
             echo "| Test | Resultado | Puntos |"
             echo "|------|:---------:|-------:|"
             row "C1.  Proyecto compila"                             "$O_C1"   5
@@ -301,6 +319,9 @@ jobs:
             row "C12. PR de sugerencia/* mergeado"                  "$O_C12"  5
             row "C13. PR de sugerencia/* tiene al menos un review"  "$O_C13"  5
             row "C14. PR de sugerencia/* aprobado por otro usuario" "$O_C14" 10
+<<<<<<< HEAD
+>>>>>>> origin/feature/conflicto-demo
+=======
 >>>>>>> origin/feature/conflicto-demo
           } >> "$GITHUB_STEP_SUMMARY"
 
